@@ -1,0 +1,76 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-nav-bg);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.headerInner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'DM Mono', monospace;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--color-text);
+}
+
+.nav {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.navLink {
+  padding: 0.4rem 0.9rem;
+  border-radius: var(--radius);
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: color var(--transition), background var(--transition);
+}
+
+.navLink:hover {
+  color: var(--color-text);
+  background: var(--color-border);
+}
+
+.navLinkActive {
+  color: var(--color-accent);
+  font-weight: 500;
+  background: var(--color-border);
+}
+
+/* Main */
+.content {
+  flex: 1;
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding: 1.25rem 2rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}

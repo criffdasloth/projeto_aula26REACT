@@ -1,0 +1,121 @@
+.cadastro {
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cadastroHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.cadastroTitle {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: -0.02em;
+}
+
+.cadastroDesc {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* Alert */
+.alert {
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.alertSuccess {
+  background: #f3f9ee;
+  color: var(--color-success);
+  border: 1px solid #c5dba8;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+/* Field */
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.label {
+  font-size: 0.825rem;
+  font-weight: 500;
+  color: var(--color-text);
+  letter-spacing: 0.01em;
+}
+
+.input {
+  height: 42px;
+  padding: 0 0.875rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.925rem;
+  color: var(--color-text);
+  background: var(--color-surface);
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+  width: 100%;
+}
+
+.input::placeholder {
+  color: #c4a899;
+}
+
+.input:focus {
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 3px rgba(140, 92, 62, 0.1);
+}
+
+/* Error state */
+.fieldError .input {
+  border-color: var(--color-danger);
+}
+
+.fieldError .input:focus {
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.1);
+}
+
+.errorMsg {
+  font-size: 0.78rem;
+  color: var(--color-danger);
+}
+
+/* Submit */
+.formFooter {
+  padding-top: 0.5rem;
+}
+
+.btnSubmit {
+  padding: 0.7rem 2rem;
+  background: var(--color-accent);
+  color: #ffffff;
+  border: none;
+  border-radius: var(--radius);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+.btnSubmit:hover {
+  background: var(--color-accent-hover);
+}
+
+.btnSubmit:active {
+  transform: scale(0.98);
+}

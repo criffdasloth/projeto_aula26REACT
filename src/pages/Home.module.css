@@ -1,0 +1,85 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.homeHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 520px;
+}
+
+.homeLabel {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.homeTitle {
+  font-size: 2.6rem;
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+}
+
+.homeDesc {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.btnPrimary {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.65rem 1.4rem;
+  background: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background var(--transition);
+  width: fit-content;
+}
+
+.btnPrimary:hover {
+  background: var(--color-accent-hover);
+}
+
+/* Cards */
+.homeCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  background: var(--color-card-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.cardIcon {
+  font-size: 1.3rem;
+  color: var(--color-card-icon);
+}
+
+.card h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.card p {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}

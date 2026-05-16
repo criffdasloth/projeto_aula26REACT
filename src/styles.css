@@ -1,0 +1,36 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #fdf6f0;
+  --color-surface: #fffaf6;
+  --color-border: #e8d9cc;
+  --color-border-focus: #8c5c3e;
+  --color-text: #3b2112;
+  --color-text-muted: #9c7360;
+  --color-accent: #a0522d;
+  --color-accent-hover: #7a3d1f;
+  --color-danger: #c0392b;
+  --color-success: #5a7a3a;
+  --color-nav-bg: #f5ede4;
+  --color-card-bg: #fef9f5;
+  --color-card-icon: #c4855a;
+  --radius: 6px;
+  --transition: 0.15s ease;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
